@@ -587,14 +587,17 @@
 		margin: 1.75em 1.5em 1.5em 1.5em;
 		min-height: 48px;
 		cursor: default;
+        text-align: center;
 	}
 	
 		#logo h1
 		{
+            font-family: 'Lovers Quarrel', cursive;
 			position: relative;
 			color: #fff;
-			font-weight: 600;
-			font-size: 1em;
+			font-weight: 550;
+			font-size: 2.5em;
+            letter-spacing: 5px;
 			line-height: 1em;
 		}
 	
@@ -614,6 +617,19 @@
 			left: 0;
 			top: 0;
 		}
+        
+        #logo .bubble-line {
+          border: none;
+          height: 21px;
+          background: -webkit-radial-gradient(center, #000000 2px, transparent 3px, transparent) repeat-x;
+          background: -moz-radial-gradient(center, #000000 2px, transparent 3px, transparent) repeat-x;
+          background: -o-radial-gradient(center, #000000 2px, transparent 3px, transparent) repeat-x;
+          background: -ms-radial-gradient(center, #000000 2px, transparent 3px, transparent) repeat-x;
+          background: radial-gradient(center, #000000 2px, transparent 3px, transparent) repeat-x;
+          -webkit-background-size: 21px 21px;
+          background-size: 21px 21px;
+          margin: 0.25em 0;
+        }
 	
 	#nav
 	{
@@ -630,7 +646,7 @@
 				#nav ul li a
 				{
 					display: block;
-					padding: 0.5em 1.5em 0.5em 1.5em;
+					padding: 0.25em 1.5em 0.25em 1.5em;
 					color: rgba(255,255,255,0.5);
 					text-decoration: none;
 					outline: 0;
