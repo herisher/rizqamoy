@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/skel.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/style-wide.css" />
+        <link rel="stylesheet" href="css/jquery.bxslider.css" />
         <!-- Google Fonts embed code -->
         <script type="text/javascript">
             (function() {
@@ -39,6 +40,28 @@
         <script src="js/skel.min.js"></script>
         <script src="js/skel-layers.min.js"></script>
         <script src="js/init.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        
+        <!--slider-->
+        <script type="text/javascript">
+        $(function(){
+          var slider = $('.slider').bxSlider({
+                auto: false,
+                mode: 'horizontal',
+                pager: false,
+                minSlides: 3,
+                maxSlides: 3,
+                moveSlides: 1,
+                nextPrevLinks: true,
+                infiniteLoop: false,
+                easing: 'easeOutBounce',
+                slideWidth: 300,
+                slideHeight: 750,
+                slideMargin: 25
+                });
+        });
+        </script>
+        <!--slider-->
     </head>
 
     <body>
@@ -62,8 +85,8 @@
                 <nav id="nav">
                     <ul>
                         <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
-                        <li><a href="#dateplace" id="dateplace-link" class="skel-layers-ignoreHref"><span class="icon fa-cal">Date & Place</span></a></li>
-                        <li><a href="#album" id="album-link" class="skel-layes-ignoreHref"><span class="icon fa-album">Photo Album</span></a></li>
+                        <li><a href="#dateplace" id="dateplace-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar">Date & Place</span></a></li>
+                        <li><a href="#album" id="album-link" class="skel-layes-ignoreHref"><span class="icon fa-camera">Photo Album</span></a></li>
                         <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
                     </ul>
                 </nav>
@@ -78,5 +101,78 @@
             </div-->
         </div>
         <!-- End Header -->
+        
+        <!-- Main -->
+        <div id="main">
+            <!-- Home -->
+            <section id="top" class="one">
+                <div class="container">
+                    <ul class="slider-content slider">
+                        <li>
+                            <a href="#">
+                                <img src="images/slider/1.png" alt="slide">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="images/slider/2.png" alt="slide">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="images/slider/3.png" alt="slide">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="images/slider/4.png" alt="slide">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="images/slider/5.png" alt="slide">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Date & Place -->
+            <section id="dateplace" class="two">
+                <div class="container">
+            
+                    <header>
+                        <h2>Date & Place</h2>
+                    </header>
+                
+                    <div class="row">
+                        <div class="12u">
+                            <article class="item">
+                                <header>
+                                    <p class="separator">
+                                    <b>ooo</b></p>
+                                </header>
+                            </article>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+        <!-- End Main-->
+        
+        <!-- Footer -->
+        <div id="footer">
+            <ul class="copyright">
+                <li>&copy; Rizqa&Tegar. 2014. All Rights Reserved.</li>
+                <li>herisher</li>
+            </ul>
+        </div>
+        <!-- End Footer -->
     </body>
 </html>

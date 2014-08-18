@@ -500,6 +500,53 @@
 				{
 					font-size: 1em;
 				}
+                
+				.item header p
+				{
+					margin: 0px;
+                    padding: 0px;
+                    border: 0px none;
+                    vertical-align: baseline;
+                    font: inherit;
+				}
+                
+                .item header .separator {
+                  margin: 1.5em 0;
+                  text-align: center;
+                  -webkit-box-shadow: inset 0 10px 0 #ffffff, inset 0 12px 0 #e5e5e5;
+                  box-shadow: inset 0 10px 0 #ffffff, inset 0 12px 0 #e5e5e5;
+                  position: relative;
+                }
+                .item header .separator > b {
+                  background-color: #ffffff;
+                  color: #e5e5e5;
+                  font-size: 1.2857142857142858em;
+                  padding: 0 0.6111111111111112em 0 1.1666666666666667em;
+                  letter-spacing: 0.5555555555555556em;
+                  line-height: 1em;
+                }
+                .item header .separator:before,
+                .item header .separator:after {
+                  content: '';
+                  width: 18px;
+                  height: 18px;
+                  display: block;
+                  border-radius: 50%;
+                  background-color: #e5e5e5;
+                  position: absolute;
+                  top: 50%;
+                  margin-top: -9px;
+                }
+                .item header .separator:before {
+                  left: 0;
+                  -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+                  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+                }
+                .item header .separator:after {
+                  right: 0;
+                  -webkit-box-shadow: inset -1px 1px 3px rgba(0, 0, 0, 0.2);
+                  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, 0.2);
+                }
 
 /*********************************************************************************/
 /* Icons                                                                         */
@@ -782,10 +829,9 @@
 		
 			#main > section.one
 			{
-				background-color: #81918E;
-				background-image: url('../images/banner.jpg');
+				background-color: #E2E9EC;
 			}
-
+            
 			#main > section.two
 			{
 				background-color: #f5fafa;
