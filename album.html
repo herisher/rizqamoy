@@ -14,6 +14,20 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Google Fonts embed code -->
+    <script type="text/javascript">
+        (function() {
+            var link_element = document.createElement("link"),
+                s = document.getElementsByTagName("script")[0];
+            if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+                link_element.href = "http:";
+            }
+            link_element.href += "//fonts.googleapis.com/css?family=Lovers+Quarrel:400";
+            link_element.rel = "stylesheet";
+            link_element.type = "text/css";
+            s.parentNode.insertBefore(link_element, s);
+        })();
+    </script>
 
     <!-- Scripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -53,14 +67,14 @@
 
             <nav class="main-navigation">
                 <ul>
-                    <li class="current-menu-item">
+                    <li>
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="wedding.html">Our wedding</a>
+                        <a href="wedding.html">Date & Place</a>
                     </li>
-                    <li>
-                        <a href="album.html">Photo album</a>
+                    <li class="current-menu-item">
+                        <a href="album.html">Gallery</a>
                     </li>
                 </ul>
             </nav>
@@ -70,8 +84,7 @@
     <div class="span17">
         <div class="row-fluid breadcrumbs">
             <div class="span24">
-                <h2>Photo album</h2>
-                <p>// Here you can view our photos</p>
+                <h2>Gallery</h2>
             </div>
         </div> <!-- /.row-fluid -->
 
@@ -91,19 +104,19 @@
                         <li>
                             <label>
                                 <input type="checkbox" data-filter="1">
-                                <b>Love story</b>
+                                <b>The Bride</b>
                             </label>
                         </li>
                         <li>
                             <label>
                                 <input type="checkbox" data-filter="2">
-                                <b>Reception</b>
+                                <b>The Groom</b>
                             </label>
                         </li>
                         <li>
                             <label>
                                 <input type="checkbox" data-filter="3">
-                                <b>Book Night</b>
+                                <b>Together</b>
                             </label>
                         </li>
                     </ul>
@@ -504,24 +517,6 @@
                 </div>
             
                 </div><!-- /.row-fluid -->
-
-                <div class="row-fluid">
-                    <div class="span24">
-                        <ul class="pagination">
-                            <li class="left-arrow">
-                                <a href="#">&lsaquo;</a>
-                            </li>
-                            <li class="active-pagination"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li class="right-arrow">
-                                <a href="#">&rsaquo;</a>
-                            </li>
-                        </ul>
-                    </div> <!-- /.span24 -->
-
-                </div> <!-- /.row-fluid -->
-
             </div> <!-- /.span22 -->
 
         </div> <!-- /.row-fluid -->
@@ -529,18 +524,7 @@
     </div> <!-- /.span17 -->
 
     <footer class="main-footer span6">
-        <ul class="social-footer">
-            <li>
-                <a href="http://facebook.com/TeslaThemes" title="Facebook">Facabook</a>
-            </li>
-            <li>
-                <a href="https://twitter.com/TeslaThemes" title="Twitter">Twitter</a>
-            </li>
-            <li>
-                <a href="http://pinterest.com/teslathemes/" title="Pinterest">Pinterest</a>
-            </li>
-        </ul>
-        <h6>Copyright 2013 All rights reserved</h6>
+        <h6>&copy; Rizqa&Tegar. 2014. <br>All rights reserved</h6>
     </footer>
     
 </div>
