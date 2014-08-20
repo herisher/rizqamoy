@@ -10,6 +10,12 @@
     <meta name="author" content="herisher">
     <meta name="viewport" content="width=device-width, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
 
+    <meta property="og:url" content="http://myvillage.buzoo.biz/" />
+    <meta property="og:title" content="MYVILLAGE" />
+    <meta property="og:description" content="農業をレジャーに" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://myvillage.buzoo.biz/img/ui/logo.png" />
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -29,6 +35,7 @@
         })();
     </script>
 
+
     <!-- Scripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>
@@ -41,12 +48,21 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-
 <body>
-<div class="row-fluid main-container">
-    <div class="span6 menu-helper"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-    <div class="span6 menu-side">
+    <div class="row-fluid main-container">
+        <div class="span6 menu-helper"></div> <!-- helper for menu position absolute -->
+
+        <div class="span6 menu-side">
+
         <div class="menu-wrapper">
             <h1 class="her-and-him">
                 <a href="index.html">
@@ -65,7 +81,7 @@
 
             <nav class="main-navigation">
                 <ul>
-                    <li class="current-menu-item">
+                    <li>
                         <a href="index.html">Home</a>
                     </li>
                     <li>
@@ -74,91 +90,40 @@
                     <li>
                         <a href="album.html">Gallery</a>
                     </li>
-                    <li>
+                    <li class="current-menu-item">
                         <a href="comment.html">Say a Words</a>
                     </li>
                 </ul>
             </nav>
         </div>
-    </div>
-    
-    <div class="span18">
-        <div class="row-fluid slider-content">
-            <ul>
-                <li>
-                    <figure>
-                        <a href="#">
-                            <img src="img/demo/slider/1.png" alt="slide">
-                        </a>
+        
+    </div><!--  /.span4 -->
 
-                        <figcaption>
-                            <h2>
-                                <a href="#">Our first meeting</a>
-                            </h2>
-                        </figcaption>
-                    </figure>
-                </li>
+    <div class="span17">
+        <div class="row-fluid breadcrumbs">
+            <div class="span24">
+                <h2>Say a Words</h2>
+            </div>
+        </div> <!-- /.row-fluid -->
 
-                <li>
-                    <figure>
-                        <a href="#">
-                            <img src="img/demo/slider/2.png" alt="slide">
-                        </a>
+        <div class="row-fluid main-content">
 
-                        <figcaption>
-                            <h2>
-                                <a href="#">Our first kiss</a>
-                            </h2>
-                        </figcaption>
-                    </figure>
-                </li>
+            <div class="span22 offset1">
 
-                <li>
-                    <figure>
-                        <a href="#">
-                            <img src="img/demo/slider/3.png" alt="slide">
-                        </a>
+                <div class="row-fluid">
+                    <div class="span24">
+                        <p class="separator">
+                            <b>ooo</b>
+                        </p>
+                    </div>
+                </div>
 
-                        <figcaption>
-                            <h2>
-                                <a href="#">Our engagement</a>
-                            </h2>
-                        </figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure>
-                        <a href="#">
-                            <img src="img/demo/slider/4.png" alt="slide">
-                        </a>
-
-                        <figcaption>
-                            <h2>
-                                <a href="#">Bachelor party</a>
-                            </h2>
-                        </figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure>
-                        <a href="#">
-                            <img src="img/demo/slider/5.png" alt="slide">
-                        </a>
-
-                        <figcaption>
-                            <h2>
-                                <a href="#">Our wedding</a>
-                            </h2>
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-
-            <a href="#" class="prev-slider"><i>&#8249;</i><b>Let's go back</b></a>
-            <a href="#" class="next-slider"><b>Keep scrolling</b><i>&#8250;</i></a>
-
+                <div class="row-fluid wedding-detail">
+                    <div class="span12 info-wedding">
+                        <div class="fb-comments" data-href="http://myvillage.buzoo.biz/" data-numposts="5" data-colorscheme="light"></div>
+                    </div> <!-- /.span12 -->
+                </div> <!-- /.row-fluid -->
+            </div>
         </div>
 
     </div>
