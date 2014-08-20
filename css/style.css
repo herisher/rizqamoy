@@ -566,8 +566,9 @@ input[type="email"]:focus{
   display: inline-block;
 }
 .slider-content > a > i {
-  font-size: 4.5em;
-  font-family: fixedsys, consolas, monospace;
+  /*font-size: 4.5em;
+  font-family: fixedsys, consolas, monospace;*/
+  font-size: 5em;
 }
 .slider-content .prev-slider {
   left: -300px;
