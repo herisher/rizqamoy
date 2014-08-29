@@ -12,7 +12,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <!-- Google Fonts embed code -->
     <script type="text/javascript">
@@ -41,6 +41,53 @@
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+        function initialize() {
+          var myLatlng = new google.maps.LatLng(-6.2549042,106.8503636);
+          var mapOptions = {
+            zoom: 15,
+            center: myLatlng
+          }
+          var map = new google.maps.Map(document.getElementById('maps_cer'), mapOptions);
+
+          var marker = new google.maps.Marker({
+              position: myLatlng,
+              map: map,
+              title: 'Rizqa & Tegar Wedding Ceremony'
+          });
+          
+          var infowindow = new google.maps.InfoWindow({
+              content:  "<p>Rizqa & Tegar Wedding Ceremony</p>"+
+                        "<p>Masjid Al Muhajirin<br>"+
+                        "Depnakertrans, Kalibata, Jakarta Selatan</p>"
+          });
+          
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+          });
+          
+          var map2 = new google.maps.Map(document.getElementById('maps_rec'), mapOptions);
+
+          var marker2 = new google.maps.Marker({
+              position: myLatlng,
+              map: map2,
+              title: 'Rizqa & Tegar Wedding Reception'
+          });
+          
+          var infowindow2 = new google.maps.InfoWindow({
+              content:  "<p>Rizqa & Tegar Wedding Reception</p>"+
+                        "<p>Balai Makarti Muktitama<br>"+
+                        "Depnakertrans, Kalibata, Jakarta Selatan</p>"
+          });
+          
+          google.maps.event.addListener(marker2, 'click', function() {
+            infowindow2.open(map2,marker2);
+          });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 <body>
 
@@ -77,7 +124,7 @@
                         <a href="album.html">Gallery</a>
                     </li>
                     <li>
-                        <a href="comment.html">Say a Words</a>
+                        <a href="comment.html">Guestbook</a>
                     </li>
                 </ul>
             </nav>
@@ -112,7 +159,8 @@
                                 <img src="img/demo/party.png" alt="wedding">
                             </a>
                             <figcaption>
-                            <iframe src="https://mapsengine.google.com/map/embed?mid=zCez5jt9LHZ0.k2Wh4U2xjquU" width="640" height="480"></iframe>
+                            <div id="maps_cer"></div>
+                            <!--iframe src="https://mapsengine.google.com/map/embed?mid=zCez5jt9LHZ0.k2Wh4U2xjquU" width="640" height="480"></iframe-->
                             </figcaption>
                         </figure>
                     </div> <!-- /.span12 -->
@@ -131,8 +179,8 @@
                         </div>
                         <br><br>
                         <ul class="row-fluid meta-article">
-                            <li class="span13 offset1 calendar-icon">Sun 26 Oct 2014</li>
-                            <li class="span8 clock-icon">4.00 PM</li>
+                            <li class="span13 offset1"><i class="fa fa-calendar fa-2x"></i>&nbsp;&nbsp;&nbsp;Sun 26 Oct 2014</li>
+                            <li class="span8"><i class="fa fa-clock-o fa-2x"></i>&nbsp;&nbsp;&nbsp;4.00 PM</li>
                         </ul>
                     </div> <!-- /.span12 -->
 
@@ -148,7 +196,8 @@
                                 <img src="img/demo/party2.png" alt="wedding">
                             </a>
                             <figcaption>
-                            <iframe src="https://mapsengine.google.com/map/embed?mid=zCez5jt9LHZ0.k2Wh4U2xjquU" width="640" height="480"></iframe>
+                            <div id="maps_rec"></div>
+                            <!--iframe src="https://mapsengine.google.com/map/embed?mid=zCez5jt9LHZ0.k2Wh4U2xjquU" width="640" height="480"></iframe-->
                             </figcaption>
                         </figure>
                     </div>
@@ -167,8 +216,8 @@
                             <a href="#">Get directions</a>
                         </div>
                         <ul class="row-fluid meta-article">
-                            <li class="span13 offset1 calendar-icon">Sun 26 Oct 2014</li>
-                            <li class="span8 clock-icon">7.00-9.00 PM</li>
+                            <li class="span13 offset1"><i class="fa fa-calendar fa-2x"></i>&nbsp;&nbsp;&nbsp;Sun 26 Oct 2014</li>
+                            <li class="span8"><i class="fa fa-clock-o fa-2x"></i>&nbsp;&nbsp;&nbsp;7.00-9.00 PM</li>
                         </ul>
                     </div>
                 </div>
