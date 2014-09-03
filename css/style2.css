@@ -175,7 +175,6 @@ img {
 .main-content {
   background-color: #FFFAF0;
   padding-bottom: 1.5em;
-  margin-left: 10px;
   min-height: 60em;
 }
 .bubble-line {
@@ -1421,7 +1420,7 @@ input[type="email"]:focus{
     background: none !important;
   }
   .wedding-detail,
-  .wedding-detail div {
+  .wedding-detail > div {
     display: block !important;
     width: 100% !important;
   }
@@ -1879,7 +1878,8 @@ input[type="email"]:focus{
 .static-menu .her-and-him{
   margin-top: 0 !important;
 }
+
 #maps_cer, #maps_rec{
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }

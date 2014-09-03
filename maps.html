@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+        function initialize() {
+          var myLatlng = new google.maps.LatLng(-6.2549042,106.8503636);
+          var mapOptions = {
+            zoom: 15,
+            center: myLatlng
+          }
+          var map = new google.maps.Map(document.getElementById('maps_cer'), mapOptions);
+
+          var marker = new google.maps.Marker({
+              position: myLatlng,
+              map: map,
+              title: 'Rizqa & Tegar Wedding Ceremony'
+          });
+          
+          var infowindow = new google.maps.InfoWindow({
+              content:  "<p>Rizqa & Tegar Wedding Ceremony</p>"+
+                        "<p>Masjid Al Muhajirin<br>"+
+                        "Depnakertrans, Kalibata, Jakarta Selatan</p>"
+          });
+          
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+          });
+          
+          var map2 = new google.maps.Map(document.getElementById('maps_rec'), mapOptions);
+
+          var marker2 = new google.maps.Marker({
+              position: myLatlng,
+              map: map2,
+              title: 'Rizqa & Tegar Wedding Reception'
+          });
+          
+          var infowindow2 = new google.maps.InfoWindow({
+              content:  "<p>Rizqa & Tegar Wedding Reception</p>"+
+                        "<p>Balai Makarti Muktitama<br>"+
+                        "Depnakertrans, Kalibata, Jakarta Selatan</p>"
+          });
+          
+          google.maps.event.addListener(marker2, 'click', function() {
+            infowindow2.open(map2,marker2);
+          });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    <div class="row-fluid main-container">
+        <div class="span6 menu-helper"></div> <!-- helper for menu position absolute -->
+
+        <div class="span6 menu-side">
+
+        <div class="menu-wrapper">
+            <h1 class="her-and-him">
+                <a href="index.html">
+                    <span>Rizqa</span>
+                    <span> & </span>
+                    <span>Tegar</span>
+                </a>
+            </h1>
+
+            <div class="ribbon-event">
+                <h3>The Wedding</h3>
+                <p>Invite You to<br>
+                Share in Our Happiness</p>
+                <hr class="bubble-line">
+            </div>
+
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="wedding.html">Date & Place</a>
+                    </li>
+                    <li>
+                        <a href="album.html">Gallery</a>
+                    </li>
+                    <li class="current-menu-item">
+                        <a href="comment.html">Guestbook</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </div><!--  /.span4 -->
+
+    <div class="span17">
+        <div class="row-fluid breadcrumbs">
+            <div class="span24">
+                <h2>Guestbook</h2>
+            </div>
+        </div> <!-- /.row-fluid -->
+
+        <div class="row-fluid main-content">
+
+            <div class="span22 offset1">
+
+                <div class="row-fluid">
+                    <div class="span24">
+                        <p class="separator">
+                            <b>ooo</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row-fluid wedding-detail">
+                    <div class="span12 info-wedding">
+                        <div class="fb-comments" data-href="http://rizqategar.meximas.com" data-numposts="5" data-colorscheme="light"></div>
+                            <div id="maps_cer"></div>
+                    </div> <!-- /.span12 -->
+                </div> <!-- /.row-fluid -->
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="main-footer span6">
+        <h6>&copy; Rizqa&Tegar. 2014. <br>All rights reserved</h6>
+    </footer>
+    
+</div>
+
+</body>
+</html>
