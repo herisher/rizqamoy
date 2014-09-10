@@ -580,15 +580,9 @@ input[type="email"]:focus{
   font-size: 5em;
 }
 .slider-content .prev-slider {
-  left: -300px;
-}
-.slider-content .prev-slider:hover {
   left: 0;
 }
 .slider-content .next-slider {
-  right: -300px;
-}
-.slider-content .next-slider:hover {
   right: 0;
 }
 .slider-content .next-slider > b {
@@ -633,6 +627,7 @@ input[type="email"]:focus{
   position: relative;
   margin-bottom: 0;
   overflow: hidden;
+  text-align: center;
 }
 .slider-content > ul > li > figure a:hover {
   opacity: 0.6;
@@ -1911,6 +1906,10 @@ input[type="email"]:focus{
   }
   .responsive-tabs__list__item {
     font-size: 0.75em;
+  }
+  .slider-content > ul > li > figure > figcaption {
+    margin-left: -125px;
+    left: 50%;
   }
 }
 @media (min-width: 980px) {
