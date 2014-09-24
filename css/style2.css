@@ -562,13 +562,13 @@ input[type="email"]:focus{
 .slider-content > a {
   position: absolute;
   top: 9em;
-  color: #ffffff;
+  color: #1a1a1a;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 #c4c4c4;
   background: rgba(0, 0, 0, 0.05);
 }
 .slider-content > a:hover {
   background: rgba(0, 0, 0, 0.2);
+  color: #ff7777;
 }
 .slider-content > a > b {
   width: 100px;
@@ -1236,6 +1236,7 @@ input[type="email"]:focus{
   bottom: 0;
   right: 0;
   margin: 0 !important;
+  font-size: 130%;
 }
 .info-wedding > p,
 .info-wedding > div,
@@ -1243,8 +1244,13 @@ input[type="email"]:focus{
   margin-left: 1.5em;
   margin-right: 1.5em;
 }
+.info-wedding > p {
+  font-style: italic;
+  text-align: right;
+}
 .get-direction {
   /*margin-bottom: 3em;*/
+  font-size: 120%;
 }
 .get-direction > p {
   background: url(../img/pin.png) left top no-repeat transparent;
